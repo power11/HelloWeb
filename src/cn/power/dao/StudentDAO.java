@@ -9,6 +9,7 @@ import java.sql.Statement;
 
 /**
  * Created by power on 2016/11/23.
+ * 目的：
  */
 public class StudentDAO {
 

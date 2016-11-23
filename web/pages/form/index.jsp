@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: power
@@ -11,10 +12,7 @@
     <title>$Title$</title>
   </head>
   <body>
-<h1>Hello Ice!!!</h1>
+<h1>My id is ${id}!!</h1>
 
-
-  <a href="/ice">增加学生</a>
-  <a href="/test?id=9">测试表单</a>
   </body>
 </html>

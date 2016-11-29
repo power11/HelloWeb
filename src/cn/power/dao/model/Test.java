@@ -1,13 +1,16 @@
 package cn.power.dao.model;
 
 /**
- * Created by power on 2016/11/23.
+ * Created on 2016/11/29 13:11
+ *
+ * @author harry
+ * @version 1.0
  */
-
-public class Student {
+public class Test {
     private Integer id;
-    private Integer age;
     private String name;
+
+    public Test(){}
 
     public Integer getId() {
         return id;
@@ -17,14 +20,6 @@ public class Student {
         this.id = id;
     }
 
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-
     public String getName() {
         return name;
     }
@@ -32,5 +27,4 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
-
 }

@@ -12,8 +12,6 @@
   </head>
   <body>
 <h1>Hello Ice!!!</h1>
-
-
   <a href="/ice">增加学生</a>
   <a href="/test?id=9">测试表单</a>
   </body>

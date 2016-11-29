@@ -22,7 +22,9 @@ public class MyConnection {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+
         Connection conn = null;
+
         try {
             conn = DriverManager.getConnection(DBURL, DBUSER, DBPASS);
         } catch (SQLException e) {

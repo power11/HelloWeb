@@ -14,7 +14,8 @@
   <body>
 <h1>Hello Ice!!!</h1>
 
-<c:forEach items="${students}" var="item" >
+<c:forEach items="${list}" var="item" >
+  ${item.id},
   ${item.name}<br>
 </c:forEach>
 

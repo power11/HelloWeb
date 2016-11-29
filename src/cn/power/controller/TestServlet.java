@@ -1,6 +1,7 @@
 package cn.power.controller;
 
 import cn.power.dao.model.Student;
+import cn.power.dao.model.Test;
 import cn.power.service.StudentService;
 import cn.power.service.impl.StudentServieImpl;
 
@@ -24,26 +25,26 @@ public class TestServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-//        StudentService studentService = new StudentServieImpl();
+        //StudentService studentService = new StudentServieImpl();
 //        Student student = new Student();
 //        student.setAge(20);
 //        student.setName("ice");
 //        studentService.add(student);
-        Student A = new Student();
-        A.setName("A");
-
-        Student B = new Student();
-        B.setName("B");
-
-        Student C = new Student();
-        C.setName("C");
-        List<Student> list = new ArrayList<Student>();
-
-        list.add(A);
-        list.add(B);
-        list.add(C);
-
-        request.setAttribute("students",list);
+//        Student A = new Student();
+//        A.setName("A");
+//
+//        Student B = new Student();
+//        B.setName("B");
+//
+//        Student C = new Student();
+//        C.setName("C");
+//        List<Student> list = new ArrayList<Student>();
+//
+//        list.add(A);
+//        list.add(B);
+//        list.add(C);
+//
+//        request.setAttribute("students",list);
 
 //        List<String> list = new ArrayList<>();
 //
@@ -51,7 +52,13 @@ public class TestServlet extends HttpServlet {
 //        list.add("1asdf1");
 //        list.add("asd1");
 
-        request.setAttribute("students",list);
+        //request.setAttribute("students",list);
+
+
+        StudentService studentService = new StudentServieImpl();
+        List<Test> tests = studentService.selectAll();
+
+        request.setAttribute("list",tests);
 
 
         request.getRequestDispatcher("pages/index.jsp").forward(request,response) ;
